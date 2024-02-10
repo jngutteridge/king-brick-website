@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/icon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	</head>
+  <body class="bg-[url('/img/rocks.jpg')] bg-cover bg-no-repeat bg-fixed flex flex-col min-h-screen">
+    <div class="mx-auto my-8 flex flex-col">
+      <h1 class="bg-white p-4 pb-0 font-title text-4xl uppercase">{{ title }}</h1>
+      <div class="bg-white max-w-full md:w-[70ch] p-4 prose">
+        {{ content | safe }}
+      </div>
+      <div class="bg-white p-4 mt-8">
+        {% include 'songs.njk' %}
+      </div>
+    </div>
+    <div class="max-w-screen-md mx-auto my-8 grow flex flex-col-reverse">
+      <p class="bg-white p-4 font-title"><a href="/">King Bububububrick</a></p>
+    </div>
+  </body>
+</html>

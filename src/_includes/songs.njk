@@ -1,0 +1,47 @@
+{% set songs = [{
+  title: "Invalid Component",
+  href: "/01-brick-breaker/01-invalid-component/"
+  }, {
+  title: "Run From Incation",
+  href: "/01-brick-breaker/02-run-from-inaction/"
+  }, {
+  title: "I Like Sunshine",
+  href: "/01-brick-breaker/03-i-like-sunshine/"
+  }, {
+  title: "Roll the Dice",
+  href: "/01-brick-breaker/04-roll-the-dice/"
+  }, {
+  title: "Seven Questions",
+  href: "/01-brick-breaker/05-seven-questions/"
+  }, {
+  title: "The Perfect Cure",
+  href: "/01-brick-breaker/06-the-perfect-cure/"
+  }, {
+  title: "Change the Record",
+  href: "/01-brick-breaker/07-change-the-record/"
+  }, {
+  title: "Romeo",
+  href: "/01-brick-breaker/08-romeo/"
+  }, {
+  title: "Friend or Foe",
+  href: "/01-brick-breaker/09-friend-or-foe/"
+  }, {
+  title: "Handbrake Turn",
+  href: "/01-brick-breaker/10-handbrake-turn/"
+  }, {
+  title: "Twelve Eighteen to Mars",
+  href: "/01-brick-breaker/11-twelve-eighteen-to-mars/"
+  }, {
+  title: "Kill the Innocent",
+  href: "/01-brick-breaker/12-kill-the-innocent/"
+  }, {
+  title: "They Don't Like Him",
+  href: "/01-brick-breaker/13-they-dont-like-him/"
+  }]
+%}
+<h2 class="text-xl font-title">Songs</h2>
+<ol class="list-decimal ml-6">
+{% for song in songs %}
+  <li class="my-2"><a class="underline" href="{{ song.href }}">{{ song.title }}</a></li>
+{% endfor %}
+</ol>
